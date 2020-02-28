@@ -118,3 +118,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# Here we added a way static for add other repository in the root
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
