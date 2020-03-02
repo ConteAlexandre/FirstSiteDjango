@@ -1,7 +1,12 @@
 {% extends 'front/master.html' %}
 {% load static %}
 
+{# Import the parameter define in the file views.py #}
+{% block headblock %}
+    <title>{{ site.name }} | About</title>
+{% endblock %}
 
+{# Here, import the body of this page #}
 {% block mainblock %}
 
     	<!-- Breadcrumb -->
@@ -155,5 +160,5 @@
 			</div>
 		</div>
 	</section>
-    
+
 {% endblock %}

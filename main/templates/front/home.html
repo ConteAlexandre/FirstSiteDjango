@@ -1,5 +1,11 @@
 {% extends 'front/master.html' %}
 
+{# Import the parameter define in the file views.py #}
+{% block headblock %}
+    <title>{{ site.name }} | Home</title>
+{% endblock %}
+
+{# Here, import the body of this page #}
 {% block mainblock %}
     	<!-- Feature post -->
 	<section class="bg0">
