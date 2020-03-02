@@ -7,4 +7,6 @@ urlpatterns = [
 
     # When tape the url without name after, we call this method, the method home who is define in the file views
     url(r'^$', views.home, name='home'),
+
+    url(r'^about/$', views.about, name='about')
 ]

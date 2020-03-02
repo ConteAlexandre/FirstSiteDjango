@@ -8,4 +8,8 @@ from .models import Main
 # Here, this method call the home file
 def home(request):
     # We return the file html who correspond at the home
-    return render(request, 'home.html')
+    return render(request, 'front/home.html')
+
+def about(request):
+
+    return render(request, 'front/about.html')
