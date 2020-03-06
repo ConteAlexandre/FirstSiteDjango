@@ -6,5 +6,7 @@ from . import views
 urlpatterns = [
 
     # Define the url for the news_detail
-    url(r'^new/(?P<word>.*)/$', views.news_detail, name="news_detail")
+    url(r'^new/(?P<word>.*)/$', views.news_detail, name="news_detail"),
+
+    url(r'^panel/news/list/$', views.news_list, name="news_list")
 ]

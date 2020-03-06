@@ -16,3 +16,8 @@ def news_detail(request, word):
 
     # We return the file html who correspond at the home
     return render(request, 'front/news_detail.html', {'news': news, 'site': site})
+
+def news_list(request):
+
+
+    return render(request, 'back/news_list.html')
