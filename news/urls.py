@@ -5,5 +5,6 @@ from . import views
 # Define the patterns
 urlpatterns = [
 
+    # Define the url for the news_detail
     url(r'^new/(?P<word>.*)/$', views.news_detail, name="news_detail")
 ]

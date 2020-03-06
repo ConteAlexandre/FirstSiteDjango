@@ -24,3 +24,10 @@ def about(request):
 
     # Return the file for the page about and define a parameter for recover the parameter
     return render(request, 'front/about.html', {'site': site})
+
+# Here, it's a method for define the home page for panel
+def panel(request):
+
+
+    # We return the homepage
+    return render(request, 'back/home.html')
