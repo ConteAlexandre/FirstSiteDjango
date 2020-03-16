@@ -25,3 +25,9 @@ def news_list(request):
 
     # We return the file html who correspond at the page who correspond with the name method
     return render(request, 'back/news_list.html', { 'news': news })
+
+def news_add(request):
+
+
+    # Define a new page for add a new
+    return render(request, 'back/news_add.html')

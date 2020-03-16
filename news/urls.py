@@ -9,5 +9,8 @@ urlpatterns = [
     url(r'^new/(?P<word>.*)/$', views.news_detail, name="news_detail"),
 
     # The url for listing the news in the panel
-    url(r'^panel/news/list/$', views.news_list, name="news_list")
+    url(r'^panel/news/list/$', views.news_list, name="news_list"),
+
+    # The url for added the news in the panel
+    url(r'^panel/news/add/$', views.news_add, name="news_add")
 ]
