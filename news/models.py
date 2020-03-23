@@ -26,6 +26,16 @@ class News(models.Model):
     # Who is writer
     writer = models.CharField(max_length=30)
 
+    # The category name
+    catname = models.CharField(max_length=30, default="-")
+
+    # Id for the category
+    catid = models.IntegerField(default=0)
+
+    # How many times has she been see
+    show = models.IntegerField(default=0)
+
+
     # Here we define what his display in the panel admin in the objects
     def __str__(self):
         return self.name + " | " + str(self.pk)

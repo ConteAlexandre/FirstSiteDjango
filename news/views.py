@@ -28,7 +28,16 @@ def news_list(request):
 
 def news_add(request):
 
-    print('okokokkokokokokokokookokokok')
+    # Condition for add the different input in the database, if this method equal as post
+    if request.method == "POST":
+        # Title
+        newstitle = request.POST.get('newstitle')
+        # Category
+        newscat = request.POST.get('newscat')
+        # Short text
+        newstxtshort = request.POST.get("newstxtshort")
+        # Body text
+        newstxt = request.POST.get("newstxt")
 
     # Define a new page for add a new
     return render(request, 'back/news_add.html')
