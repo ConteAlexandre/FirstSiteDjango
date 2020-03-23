@@ -28,6 +28,7 @@ def news_list(request):
 
 def news_add(request):
 
+    print('okokokkokokokokokokookokokok')
 
     # Define a new page for add a new
     return render(request, 'back/news_add.html')
